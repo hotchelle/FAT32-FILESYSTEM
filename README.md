@@ -48,16 +48,16 @@ Deletes the file from the file system.
 undel filename
 Un-deletes the file from the file system.
 
-## Commands to try
+## Commands List
 | Command | Description |
 | ----------- | ----------- |
-| open &lt;FAT32 image name&gt; | Opens the inputted FAT32 disk image |
-| close | Closes the currently open FAT32 disk image |
-| info | Prints out information about the loaded file system in both decimal and hexadecimal |
-| stat &lt;file name / directory name&gt; | Prints out attributes and starting cluster number of inputted folder/directory |
-| get &lt;file name&gt; | Retrieves file from FAT32 image and places it in current working directory  |
-| cd &lt;directory path&gt; | Change directory  |
-| ls | Lists files in current directory |
-| read &lt;file name&gt; &lt;position&gt; &lt;# of bytes&gt; | Prints out n bytes of the inputted file to console from the inputted starting position |
-| del &lt;file name&gt; | Deletes inputted file name from current directory |
-| undel | Undeletes last deleted file |
+| open &lt;FAT32 image name&gt; | This command shall open a fat32 image. |
+| close | Closes the opened FAT32 disk image |
+| info | Prints out information about the file system |
+| stat &lt;file name / directory name&gt; | This command shall print the attributes and starting cluster number of the file or directory name.|
+| get &lt;file name&gt; | This command shall retrieve the file from the FAT 32 image and place it in your current working directory.|
+| cd &lt;directory path&gt; | This command changes the current working directory to the given directory.|
+| ls | Lists the directory contents. Supports listing "." and ".."|
+| read &lt;file name&gt; &lt;position&gt; &lt;# of bytes&gt; | Reads from the given file at the position, in bytes, specified by the position parameter and output the number of bytes specified. |
+| del &lt;file name&gt; | Deletes the file from the file system. |
+| undel | Un-deletes the file from the file system. |
